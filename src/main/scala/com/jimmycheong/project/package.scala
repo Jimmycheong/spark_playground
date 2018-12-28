@@ -14,8 +14,7 @@ package object project {
   def buildSparkSession(): SparkSession = {
     SparkSession
       .builder()
-      .config("spark.master", "local[2]")
-
+      .config("spark.master", "local[3]")
       .getOrCreate()
   }
 
